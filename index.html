@@ -1,13 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="app.css">
+    <script defer src="shop.js"></script>
     <title>Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <div id="name">WEBES BOLT</div>
+            <div><img class="icon" src="./src/shop.png" alt=""></div>
+            <div>
+                <ul id="sel">
+                    <li id="bolt" onclick="changeShop()">Bolt</li>
+                    <li id="kos" onclick="changeKosar()">Kosár</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="shop">
+            <div class="shopItem" onclick="add(1, alma)" id="item1"><img class="kep" src="./src/alma.png" alt=""><div class="item">Alma</div></div>
+            <div class="shopItem" onclick="add(1, barack)" id="item2"><img class="kep" src="./src/barack.png" alt=""><div class="item">Barack</div></div>
+            <div class="shopItem" onclick="add(1, korte)" id="item3"><img class="kep" src="./src/korte.png" alt=""><div class="item">Körte</div></div>
+            <div class="shopItem" onclick="add(1, szilva)" id="item4"><img class="kep" src="./src/szilva.png" alt=""><div class="item">Szilva</div></div>
+            <div class="shopItem" onclick="add(1, banan)" id="item5"><img class="kep" src="./src/banan.png" alt=""><div class="item">Banán</div></div>
+            <div class="shopItem" onclick="add(1, repa)" id="item6"><img class="kep" src="./src/repa.png" alt=""><div class="item">Répa</div></div>
+            <div class="shopItem" onclick="add(1, eper)" id="item7"><img class="kep" src="./src/eper.png" alt=""><div class="item">Eper</div></div>
+            <div class="shopItem" onclick="add(1, mango)" id="item8"><img class="kep" src="./src/mango.png" alt=""><div class="item">Mango</div></div>
+            <div class="shopItem" onclick="add(1, ubi)" id="item9"><img class="kep" src="./src/ubi.png" alt=""><div class="item">Uborka</div></div>
+            <div class="shopItem" onclick="add(1, karfiol)" id="item10"><img class="kep" src="./src/karfiol.png" alt=""><div class="item">Karfiol</div></div>
+            <div class="shopItem" onclick="add(1, retek)" id="item11"><img class="kep" src="./src/retek.png" alt=""><div class="item">Retek</div></div>
+            <div class="shopItem" onclick="add(1, dinnye)" id="item12"><img class="kep" src="./src/gorogdinnye.png" alt=""><div class="item">Dinnye</div></div>
+        </div>
+        <div id="kosar">
+            <div id="dis">
+                <h1>kosar</h1>
+                <div id="print">
+                    <div class="lsitem" id="almaprint">alma<button onclick="remove(alma)">Del</button></div>
+                    <div class="lsitem" id="barackprint">barack<button onclick="remove(barack)">Del</button></div>
+                    <div class="lsitem" id="korteprint">korte<button onclick="remove(korte)">Del</button></div>
+                    <div class="lsitem" id="szilvaprint">szilva<button onclick="remove(szilva)">Del</button></div>
+                    <div class="lsitem" id="bananprint">banán<button onclick="remove(banan)">Del</button></div>
+                    <div class="lsitem" id="repaprint">répa<button onclick="remove(repa)">Del</button></div>
+                    <div class="lsitem" id="eperprint">eper<button onclick="remove(eper)">Del</button></div>
+                    <div class="lsitem" id="mangoprint">mango<button onclick="remove(mango)">Del</button></div>
+                    <div class="lsitem" id="uborkaprint">uborka<button onclick="remove(ubi)">Del</button></div>
+                    <div class="lsitem" id="karfiolprint">karfiol<button onclick="remove(karfiol)">Del</button></div>
+                    <div class="lsitem" id="retekprint">retek<button onclick="remove(retek)">Del</button></div>
+                    <div class="lsitem" id="dinnyeprint">dinnye<button onclick="remove(dinnye)">Del</button></div>
+                </div>
+                <button id="start" onclick="buy()">BUY<i class="fa fa-shopping-cart"></i></button>
+            </div>
+        </div>
+    </main>
+    <footer>© Bandi and Brown </footer>
 </body>
 </html>
