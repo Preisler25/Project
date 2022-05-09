@@ -143,6 +143,11 @@ h1{
     cursor: pointer;
     background-color: wheat;
 }
+
+i{
+    margin-left: 10px;
+    
+}
 #print{
     margin-left: 5vw;
     width: 60vw;
