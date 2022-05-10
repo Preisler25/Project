@@ -16,7 +16,7 @@ let dinnye = [];
 //money
 
 let money = 10000;
-
+alert(money + " Ft-od van")
 
 //price
 
@@ -31,12 +31,13 @@ const mangoAr = 18;
 const ubiAr = 90;
 const karfiolAr = 48;
 const retekAR = 13;
-const dinnyeAr = 51;
+const dinnyeAr = 8000;
 
 
 const shop = document.getElementById('shop');
 const kosar = document.getElementById('kosar');
 const print = document.getElementById('print');
+
 
 const changeShop =()=>{
     shop.style.display = "grid";
@@ -77,6 +78,14 @@ const display =()=>{
 }
 
 const buy =()=>{
-    let chout = alma.length*almaAr+ barack.length*barackAr+korte.length*korteAr+szilva.length*szilvaAr+banan.length*bananAr+repa.length*repaAr+eper.length*eperAr+mango.length*mangoAr+ubi.length*ubiAr+karfiol.length*karfiolAr+retek.length*retekAR+dinnye.length*dinnyeAr;
-    alert(chout)
+    let temp = alma.length*almaAr+ barack.length*barackAr+korte.length*korteAr+szilva.length*szilvaAr+banan.length*bananAr+repa.length*repaAr+eper.length*eperAr+mango.length*mangoAr+ubi.length*ubiAr+karfiol.length*karfiolAr+retek.length*retekAR+dinnye.length*dinnyeAr;
+    let value = money - temp
+    if (value<=0) {
+        alert("nincs elég pénzed, módosíts a kosár tartalmán")
+    }   else{
+        alert(value + " Ft-od maradt")
+        
+    }
+    
 }
+

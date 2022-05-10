@@ -19,27 +19,37 @@ body{
     margin: 0;
     user-select: none;
 }
+header{
+    position: fixed;
+    width: 100vw;
+    top: 0;
+}
+main{
+    padding-top: 50px;
+}
 nav{
     display: flex;
     justify-content: center;
     background-color: beige;
 }
+
 #name{
     font-size: 4vh;
     position: absolute;
     left: 3%;
-    top: 1.5%;
+    top: 15%;
 }
 .icon{
     margin-top: 2vh;
     height: 5vh;
     width: 5vh;
+    transform: translateY(-20%);
 }
 #bolt{
     display: inline;
     position: absolute;
     right: 7%;
-    top: 1%;
+    top: 15%;
     padding: 15px;
     transition: 0.4s;
     border-radius: 10px;
@@ -54,7 +64,7 @@ nav{
     display: inline;
     position: absolute;
     right: 3%;
-    top: 1%;
+    top: 15%;
     padding: 15px;
     transition: 0.4s;
     border-radius: 10px;
@@ -136,7 +146,7 @@ h1{
 }
 #start{
     position: absolute;
-    bottom: 19%;
+    bottom: 20%;
     border-radius: 10px;
     padding: 10px;
     border-width: 0;
