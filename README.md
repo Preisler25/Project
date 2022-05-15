@@ -4,7 +4,7 @@ A dolgozatotad ezzel a projekt feladattal tudod majd kijavítani. Nem lesz belő
 
 feladat leírás:
 Készíts egy boltot, amely legalább 9db itemet tartalmaz. A vásárlónak legyen x mennyiségű pénze amit el tud költeni, de ne tudjon túlköltekezni (ne menjen minuszba). Minden terméknek legyen ára is. A termékeket először egy kosárba lehessen bepakolni (ilyenkor még nem fizet semmit a vásárló), a kosár összesítve írja ki, hogy a vásárló miből mennyit akar venni. Majd a kosárnál legyen egy BUY-gomb aminek a megnyomásakor a kosárban lévő termékek ára levonódik a vásárlónk számlájáról.
-
+!! A weboldalnak nem kell resposivenak lennie, ha megcsinálod arra akkor az csak pulsz pont!!
 ajánlott js elemek:
 
 - lista
