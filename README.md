@@ -15,4 +15,4 @@ ajánlott js elemek:
 
 Ha bármi kérdésed, problémád van ezzel kapcsolatban szólj/írj vagy bárhogy jelezd nekünk és mi segiteni fogunk.
 
-                                                                                                                                © Brown
+                                                                                                                             © Brown
